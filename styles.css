@@ -61,12 +61,28 @@ nav {
 }
 
 // Links
-.nav ul a {
-	text-decoration: none;
+.nav ul a:link {
+	color: lightcoral;
+	text-decoration: none;	
+}
+
+.nav ul a:visited {
+	color: maroon;
+	text-decoration: none;	
+}
+
+.nav ul a:hover{
+	text-decoration: none;		
+}
+
+.nav ul li:hover{
+	background-color: pink;
+	text-decoration: none;	
 }
 
 a:link {
 	color: forestgreen;
+	text-decoration: none;	
 }
 
 a:visited {
