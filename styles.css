@@ -95,6 +95,6 @@ a:hover {
 }
 
 a:active {
-	color: gold
+	color: gold;
 	text-decoration: underline;
 }
