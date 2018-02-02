@@ -1,3 +1,42 @@
-body {
-	background-color:rgba(254, 255, 234, 0.5);
+h1 {
+	background-color:lemonchiffon;
+}
+
+// Tables
+table#skills {
+	border: 1px solid grey;
+	border-collapse: collapse;
+}
+
+th {
+	border: 1px solid grey;
+	border-collapse: collapse;
+	text-align: right;
+	padding: 5px;
+}
+
+td {
+	border: 1px solid grey;
+	border-collapse: collapse;
+	text-align: left;
+	padding: 5px;
+}
+
+// Links
+a:link {
+	color: forestgreen;
+}
+
+a:visited {
+	color: lightgreen;
+}
+
+a:hover {
+	color: aquamarine;
+	text-decoration: underline;
+}
+
+a:active {
+	color: gold
+	text-decoration: underline;
 }
