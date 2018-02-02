@@ -1,17 +1,12 @@
+html {
+	height: 100%;
+}
+
 body {
 	height: 100%;
 	margin: 0px;
 	display: flex;
 	box-sizing: border-box;
-}
-
-#sidebar {
-	flex: 0 0 auto;
-}
-
-#main {
-	flex-shrink: 0;
-	overflow-y: auto;
 }
 
 .pane {
@@ -21,7 +16,14 @@ body {
 	flex-grow: 1;
 }
 
-article {
+#main {
+	flex-shrink: 0;
+	overflow-y: auto;
+	width: 88%;
+}
+
+#content {
+	height: 100%;
 	margin: 10px;
 }
 
@@ -34,9 +36,20 @@ footer {
 	background-color: aliceblue;
 	color: steelblue;
 	text-align: center;
+	position: absolute;
+	bottom: 0px;
+	width: 88%;
+	height: 4%;
+}
+
+#sidebar {
+	height: 100%;
+	flex: 0 0 auto;
+	width: 12%;
 }
 
 nav {
+	height: 100%;
 	background-color:mintcream;
 	padding: 10px;
 }
@@ -44,7 +57,7 @@ nav {
 .nav ul {
 	list-style-type: none;
 	padding: 0px;
-	text-align: center;
+	text-align: right;
 }
 
 // Links
