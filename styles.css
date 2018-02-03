@@ -1,100 +1,98 @@
 html {
-	height: 100%;
+  height: 100%;
 }
 
 body {
-	height: 100%;
-	margin: 0px;
-	display: flex;
-	box-sizing: border-box;
+  display: flex;
+  height: 100%;
+  margin: 0;
 }
 
 .pane {
-	height: 100%;
 	display: flex;
-	flex-direction: column;
-	flex-grow: 1;
+  flex-direction: column;
+  flex-grow: 1;
+  height: 100%;
 }
 
-#main {
-	flex-shrink: 0;
-	overflow-y: auto;
-	width: 88%;
+.main {
+  flex-shrink: 0;
+  overflow-y: auto;
+  width: 88%;
 }
 
-#content {
-	height: 100%;
-	margin: 10px;
+.content {
+  height: 100%;
+  margin: 10px;
 }
 
 header {
-	background-color: lemonchiffon;
-	padding: 5px;
+  background-color: lemonchiffon;
+  padding: 5px;
 }
 
 footer {
-	background-color: aliceblue;
-	color: steelblue;
-	text-align: center;
-	position: absolute;
-	bottom: 0px;
-	width: 88%;
-	height: 4%;
+  background-color: aliceblue;
+  bottom: 0;
+  color: steelblue;
+  height: 4%;
+  position: absolute;
+  text-align: center;
+  width: 88%;
 }
 
-#sidebar {
-	height: 100%;
+.sidebar {
 	flex: 0 0 auto;
-	width: 12%;
+  height: 100%;
+  width: 12%;
 }
 
 nav {
-	height: 100%;
-	background-color:mintcream;
-	padding: 10px;
+	background-color: mintcream;
+  height: 100%;
 }
 
 .nav ul {
-	list-style-type: none;
-	padding: 0px;
-	text-align: right;
+  list-style-type: none;
+  padding: 0;
+  text-align: right;
 }
 
-// Links
+/*Links*/
 .nav ul a:link {
-	color: lightcoral;
-	text-decoration: none;	
+  color: lightcoral;
+  text-decoration: none;
 }
 
 .nav ul a:visited {
-	color: maroon;
-	text-decoration: none;	
+  color: maroon;
+  text-decoration: none;
 }
 
-.nav ul a:hover{
-	text-decoration: none;		
+.nav ul a:hover {
+  text-decoration: none;
 }
 
-.nav ul li:hover{
-	background-color: pink;
-	text-decoration: none;	
+.nav ul li:hover {
+  background-color: pink;
+  text-decoration: none;
 }
 
 a:link {
-	color: forestgreen;
-	text-decoration: none;	
+  color: forestgreen;
+  text-decoration: none;
 }
 
 a:visited {
-	color: lightgreen;
+  color: lightgreen;
 }
 
 a:hover {
-	color: aquamarine;
-	text-decoration: underline;
+  color: aquamarine;
+  text-decoration: underline;
 }
 
 a:active {
-	color: gold;
-	text-decoration: underline;
+  color: gold;
+  text-decoration: underline;
 }
