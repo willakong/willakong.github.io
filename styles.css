@@ -73,18 +73,18 @@ nav {
   text-decoration: none;
 }
 
-.nav ul li:hover {
+.nav ul li .menu:hover {
   background-color: pink;
   text-decoration: none;
 }
 
 a:link {
-  color: forestgreen;
+  color: lightgreen;
   text-decoration: none;
 }
 
 a:visited {
-  color: lightgreen;
+  color: forestgreen;
 }
 
 a:hover {
