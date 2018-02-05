@@ -9,8 +9,8 @@ body {
 }
 
 .pane {
-	display: flex;
-	flex-flow: row wrap;
+  display: flex;
+  flex-flow: column wrap;
   flex-grow: 1;
   height: 100%;
 }
@@ -22,8 +22,6 @@ body {
 }
 
 .content {
-  height: 100%;
-  margin: 10px;
 }
 
 header {
@@ -42,13 +40,13 @@ footer {
 }
 
 .sidebar {
-	flex: 1 1 100%;
+  flex: 1 1 100%;
   height: 100%;
   width: 12%;
 }
 
-nav {
-	background-color: mintcream;
+.nav {
+  background-color: mintcream;
   height: 100%;
 }
 
