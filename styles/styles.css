@@ -1,0 +1,101 @@
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+/* Heading */
+.heading {
+  background-color: lemonchiffon;
+  height: 100vh;
+  text-align: center;
+}
+
+.profilePic {
+  border-radius: 50%;
+  margin-top: 15vh;
+  width: 30%;  
+}
+
+/* Navigation */
+.nav {
+  background-color: seashell;
+  overflow: hidden;
+}
+
+.nav a {
+  display: block;
+  float: left;
+  padding: 14px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  background-color: rgb(181, 242, 255);
+  color: black;
+}
+
+.nav a:active {
+  background-color: rgb(0, 111, 88);
+  color: white;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .main {
+  padding-top: 30px;
+}
+
+/* Main Section */
+.main {
+  display: inline-flex;
+}
+
+/* Content */
+.content {
+  margin-left: 15px;
+}
+
+/* Footer */
+.footing {
+  background-color: rgb(204, 238, 215);
+  flex-shrink: 0;
+  text-align: center;
+  width: 100%;
+}
+
+.footing img {
+  height: 25px;
+  width: 25px;
+}
+
+.footing img:hover {
+  opacity: 0.5;
+}
+
+/* Smaller Screens */
+@media screen and (max-height: 450px){
+  .sidebar { padding-top: 15px; }
+}
+
+/* General Links */
+a {
+  color: rgb(48, 69, 167);
+}
+
+a:hover {
+  color: rgb(58, 203, 139);
+}
+
+a:active {
+  color: rgb(233, 220, 66);
+}
+
+a:visited {
+  color: rgb(5, 65, 21);
+}
