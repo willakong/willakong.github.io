@@ -1,0 +1,63 @@
+#projects {
+  color: yellow;
+}
+
+.tabs {
+  background-color: rgba(1, 0, 44, 0.76);
+  border-radius: 0 25px 25px 0;
+  float: left;
+  margin: 20px 10px 0 0;
+  width: 10%;
+  min-width: 150px;
+  height: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  .tabs {
+    border-radius: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .tabs a {
+    text-align: center;
+  }
+}
+
+.tablinks {
+  border-radius: 0 25px 0 0;
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  padding: 15px;
+  text-align: right;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.tablinks:hover, .tabs .active {
+  border-radius: inherit;
+  background-color: rgb(1, 0, 54);
+  color: white;
+}
+
+.tabcontent {
+  display: none;
+  float: left;
+}
+
+.skill-bubbles ul {
+  margin: 0;
+  padding: 0;
+}
+
+.skill-bubbles li {
+  background-color: rgb(1, 0, 54);
+  color: white;
+  border-radius: 50px;
+  display: inline-block;
+  font-size: 13px;
+  padding: 8px;
+  margin-right: 10px;
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Home</title>
+
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Proza Libre">
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="styles/footer-styles.css">
+  <link rel="stylesheet" href="styles/home-styles.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" async></script>
+  <script type="text/javascript" src="scripts/insert-include.js" async></script>
+  <script type="text/javascript" src="scripts/navigation.js" async></script>
+</head>
+<body onload="loadTemplate()">
+  <div class="nav" id="nav-bar"></div>
+
+  <div class="main">
+    <div class="slideshow">
+      <div class="slide-image">
+        <div class="slides fade">
+          <div class="text">
+            <h1>Hiya~</h1>
+            <h1>Welcome to my site!</h1>
+          </div>
+        </div>
+
+        <div class="slides fade">
+          <div class="text">
+            <h1>My name is Willa Kong.</h1>
+            <h2>I'm a student currently attending the University of Waterloo.</h2>
+          </div>
+        </div>
+
+        <div class="slides fade">
+          <div class="text">
+            <h1>I do a few things in my spare time.</h1>
+            <h2>I program, read, write, play sweet games, and toss a few basketballs every now and then.</h2>
+          </div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+
+      <br>
+      <div class="slide-dots">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="content-card">
+        <div class="card-title">
+            <h3>Skills</h3>
+        </div>
+        <ul>
+          <li>Java, C#, C++, Swift</li>
+          <li>HTML, CSS, JavaScript, React.js</li>
+          <li>PHP, Python</li>
+          <li><strong><a href="about.html">See my resume</a></strong></li>
+        </ul>
+      </div>
+
+      <div class="content-card">
+        <div class="card-title">
+            <h3>Achievements</h3>
+        </div>
+        <ul>
+          <li>Ranked top 20 internationally at ICDC for marketing management</li>
+          <li>Won 1st in school for Hypatia and ranked distinction in numerous math contests</li>
+          <li>Went to various places throughout Canada and in France for extracurriculars</li>
+        </ul>
+      </div>
+
+      <div class="content-card">
+        <div class="card-title">
+            <h3>Interests</h3>
+        </div>
+        <ul>
+          <li>Programming</li>
+          <li>Reading fiction novels</li>
+          <li>Writing poetry</li>
+          <li>Playing basketball</li>
+          <li>Playing console, mobile and PC games, casually</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer" id="footer-bar"></div>
+</body>
+<script src="scripts/slideshow.js"></script>
+</html>

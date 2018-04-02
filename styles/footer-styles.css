@@ -1,0 +1,47 @@
+/* Footer */
+.footer {
+  background-color: rgb(1, 0, 54);
+  color: white;
+  flex: 0 1 auto;
+  text-align: center;
+  width: 100%;
+  margin-top: 20px;
+  padding: 20px 0 5px 0;
+  z-index: 1;
+}
+
+.footer-left {
+  float: left;
+  font-size: 0.8em;
+  margin-left: 0.5em;
+}
+
+.footer-right {
+  float: right;
+  margin-right: 0.5em;
+}
+
+.footer-right img {
+  height: 25px;
+  width: 25px;
+  opacity: 0.7;
+}
+
+.footer-right img:hover {
+  opacity: 1;
+}
+
+@media screen and (max-width: 600px) {
+  .footing {
+    display: block;
+  }
+
+  .footer-left, .footer-right {
+    float: none;
+    margin: 0 auto;
+  }
+
+  .footer-right {
+    margin-top: 10px;
+  }
+}

@@ -11,7 +11,8 @@ function openTab(event, name){
     tablinks[i].classList.remove("active");
   }
 
-  document.getElementById(name).style.display = "block";
+  var tab = document.getElementById(name);
+  tab.style.display = "block";
   event.currentTarget.classList.add("active");
 }
 

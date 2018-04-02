@@ -1,0 +1,158 @@
+#home {
+  color: yellow;
+}
+
+.main {
+  display: inline-block;
+}
+
+.slide-image {
+  background-image: url(../images/home-slide.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 45vh;
+  min-width: 100%;
+  position: relative;
+}
+
+/* Hide slides by default */
+.slides {
+  display: none;
+}
+
+.slide-dots {
+  text-align: center;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+/* Previous and next buttons */
+.prev, .next {
+  background-color: rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  font-size: 2em;
+  height: 100%;
+  line-height: 800%;
+  margin: auto;
+  padding: 0 0.2em;
+  position: absolute;
+  text-align: center;
+}
+
+/* Previous is on the left */
+.prev {
+  left: 0;
+}
+
+/* Next is on the right */
+.next {
+  right: 0;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 1);
+  color: white;
+}
+
+/* Caption text */
+.text {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #f2f2f2;
+  font-size: 14px;
+  text-align: center;
+  padding: 0em 2.5em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 600px), screen and (max-height: 400px) {
+  .text {
+    font-size: 8px;
+    padding: 0em 2.2em;
+  }
+}
+
+@media screen and (max-width: 800px), screen and (max-height: 520px) {
+  .text {
+    font-size: 10px;
+    padding: 0em 2.4em;
+  }
+
+  .prev, .next {
+    font-size: 1.2em;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .text {
+    font-size: 6px;
+    padding: 0em 0.5em;
+  }
+
+  .prev, .next {
+    font-size: 1em;
+  }
+}
+
+.dot {
+  cursor:pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active-dot, .dot:hover {
+  background-color: #717171;
+}
+
+.content {
+  text-align: center;
+}
+
+.content-card {
+  background: white;
+  color: black;
+  border: 3px solid rgb(1, 0, 54);
+  border-radius: 10px;
+  display: inline-block;
+  margin: 30px;
+  vertical-align: middle;
+  height: 100%;
+  width: 270px;
+}
+
+.card-title {
+  background-color: rgb(1, 0, 54);
+  color: white;
+  padding: 8px;
+}
+
+.card-title h3 {
+  margin: 0;
+}
+
+.content-card ul {
+  padding-left: 25px;
+  text-align: left;
+}
