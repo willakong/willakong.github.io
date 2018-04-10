@@ -1,16 +1,24 @@
 function insert(filePath, id) {
-  $('#' + id).load(filePath);
+  $(document).ready(function(){
+    $('#' + id).load(filePath);
+  });
 }
 
 function insertNav() {
-  $('#nav-bar').load('includes/navigation.html');
+  $(document).ready(function(){
+    $('#nav-bar').load('includes/navigation.html');
+  });
 }
 
 function insertFooter() {
-  $('#footer-bar').load('includes/footer.html');
+  $(document).ready(function(){
+    $('#footer-bar').load('includes/footer.html');
+  });
 }
 
 function loadTemplate() {
-  insertNav();
-  insertFooter();
+  $(document).ready(function(){
+    insertNav();
+    insertFooter();
+  });
 }
