@@ -12,7 +12,7 @@ function openTab(event, name){
   }
 
   var tab = document.getElementById(name);
-  tab.style.display = "block";
+  tab.style.display = "inline";
   event.currentTarget.classList.add("active");
 }
 

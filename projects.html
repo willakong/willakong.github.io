@@ -19,8 +19,10 @@
   <div class="main">
     <div class="tabs">
       <a class="tablinks" onclick="openTab(event, 'Site')" id="default">Personal Site</a>
+      <a class="tablinks" onclick="openTab(event, 'Sat')">Satellite</a>
+      <a class="tablinks" onclick="openTab(event, 'Stock')">Stock Notifier</a>
     </div>
-
+    <hr class="divider">
     <div class="content">
       <div id="Site" class="tabcontent">
         <h1>Personal Site</h1>
@@ -33,10 +35,41 @@
             <li>AJAX</li>
           </ul>
         </div>
-        <p>This is a personal site that I designed and created.</p>
-        <p>jQuery and AJAX were used to keep the navigation bar and footer consistent from page-to-page.</p>
+        <div>
+          <p>This is a personal site that I designed and created to showcase my achievements and abilities. Everything is built purely from HTML, CSS, and JavaScript.</p>
+          <p>jQuery and AJAX were used to keep the navigation bar and footer consistent from page-to-page as everything is hosted on GitHub using only client side.</p>
+        </div>
+        </div>
+
+      <div id="Sat" class="tabcontent">
+        <h1>Attitude Determination &amp; Control Subsystem</h1>
+        <div class="skill-bubbles">
+          <ul>
+            <li>Research</li>
+          </ul>
+        </div>
+        <div>
+          <p>I am a team member of <emp>WatSat</emp>, one of Waterloo's design teams. More specifically, I am a member of the Attitude Determination &amp; Control Subsystem subteam (ADCS).</p>
+          <p>Currently, I am researching into algorithms for detumbling and noise reduction for a satellite.</p>
+        </div>
+      </div>
+
+      <div id="Stock" class="tabcontent">
+        <h1>Stock Notifier</h1>
+        <div class="skill-bubbles">
+          <ul>
+            <li>C++</li>
+            <li>Omega Onion</li>
+            <li>Linux</li>
+          </ul>
+        </div>
+        <div>
+          Using an Omega Onion, Linux cross-compiling, OLED display, and LEDs, a stock notifier was created which web scraped stock data and displayed relevant information on its screen as well as lighting up LEDs.
+        </div>
       </div>
     </div>
+  </div>
+  </div>
   </div>
   <div class="footer" id="footer-bar"></div>
 

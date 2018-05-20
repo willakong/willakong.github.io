@@ -3,31 +3,19 @@
 }
 
 .profile-side {
-  background-color: rgba(1, 0, 44, 0.829);
-  color: white;
-  float: left;
-  padding: 25px 0;
-  text-align: center;
-  height: 100%;
-  width: 100%;
+  display: inline-block;
+  margin: auto;
+  padding: 25px;
   min-width: 280px;
 }
 
-@media screen and (max-width: 650px) {
-  .main {
-    display: block;
-  }
+.profile-img {
+  float: left;
+  padding: 20px;
+}
 
-  .profile-side, .content {
-    float: none;
-    font-size: 14px;
-    width: initial;
-  }
-
-  .profile-side {
-    border-radius: 0;
-    margin: 0;
-  }
+.profile-desc {
+  float: left;
 }
 
 .profile-side img {
@@ -35,15 +23,18 @@
   width: 120px;
 }
 
-.profile-side p {
-  text-align: center;
-  padding: 5px;
-}
+@media screen and (max-width: 930px) {
+  .profile-side {
+    display: block;
+    margin: auto;
+  }
 
-.files {
-  text-align: center;
-}
+  .profile-img {
+    padding: 0;
+  }
 
-.content {
-  float: left;
+  .profile-img, .profile-desc {
+    float: none;
+    text-align: center;
+  }
 }
