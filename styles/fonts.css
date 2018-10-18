@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'BadMofo';
+  src: url('../assets/BadMofo.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'K2D', sans-serif;
+}
+
+.greetings {
+  font-family: 'BadMofo';
+}
+
+.sectionHeaders {
+  font-family: 'Acme', sans-serif;
+}
