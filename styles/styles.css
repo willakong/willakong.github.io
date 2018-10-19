@@ -5,7 +5,7 @@ body {
   --light-accent2: #FFB8D1;
   --dark-accent: #011638;
 
-  background-color: var(--light-neutral);
+  background-color: var(--light-neutral, white);
   height: 100%;
   width: 100%;
 }
@@ -24,41 +24,42 @@ body {
 }
 
 .navbar {
-  background: var(--light-neutral);
+  background: var(--light-neutral, white);
   opacity: 0.9;
 }
 
 .active {
-  color: var(--dark-accent);
+  color: var(--dark-accent, black);
 }
 
 .nav-link {
-  color: var(--dark-neutral);
+  color: var(--dark-neutral, black);
 }
 
 .greetings {
-  color: var(--dark-accent);
+  color: var(--dark-accent, black);
   font-weight: bold;
   font-size: 20vw;
 }
 
 .typed-words {
-  color: var(--dark-neutral);
+  color: var(--dark-neutral, black);
   font-size: 5vw;
 }
 
 .connect-icons {
-  color: var(--light-accent1);
+  color: var(--light-accent1, skyblue);
   font-size: 10vh;
 }
 
 .connect-icons:hover{
-  color: var(--light-accent2);
+  color: var(--light-accent2, pink);
 }
 
 .fa-chevron-circle-left,
 .fa-chevron-circle-right {
   color: var(--dark-neutral);
+  cursor: pointer;
   font-size: 2em;
 }
 
@@ -70,20 +71,24 @@ body {
   margin: 0;
 }
 .card-body {
-  color: var(--dark-accent);
+  color: var(--dark-accent, black);
 }
 
 .card-text {
-  color: var(--dark-neutral);
+  color: var(--dark-neutral, black);
 }
 
 .tools-icon-links {
-  color: var(--light-accent1);
+  color: var(--light-accent1, skyblue);
   font-size: 4vh;
 }
 
+.tools-icon-links:hover {
+  opacity: 0.7;
+}
+
 .tools-icons {
-  color: var(--light-accent2);
+  color: var(--light-accent2, pink);
   font-size: 5vh;
 }
 
