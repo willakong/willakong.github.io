@@ -6,9 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Willa Kong</title>
 
+  <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico"/>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Acme|K2D">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
   <link rel="stylesheet" href="./assets/slick/slick.css">
   <link rel="stylesheet" href="./assets/slick/slick-theme.css">
@@ -51,7 +52,10 @@
             Hiya there! I'm Willa Kong, a university student studying computer engineering 🎒.
           </p>
           <p>
-            I like programming 💻, gaming (Xenoblade, Ace Attorney) 🎮, and reading (Keeper of the Lost Cities) 📚.
+            I like
+            programming random stuff in my free time 💻,
+            gaming (Xenoblade Chronicles, Ace Attorney, Legend of Zelda, Super Smash Bros.) 🎮,
+            and reading (Keeper of the Lost Cities, Lunar Chronicles, Pragmatic Programmer) 📚.
           </p>
           <p>
             Find me on GitHub, LinkedIn, or take a look at my resumé 💁.
@@ -84,7 +88,7 @@
         <div class="card">
           <div class="card-body">
             <h4 class="card-title">
-              Portfolio Site
+              Personal Site
               <a target=_blank href="https://github.com/willakong/willakong.github.io"><i class="fab fa-github tools-icon-links"></i></a>
             </h4>
             <p>
@@ -93,45 +97,59 @@
               <i class="devicon-javascript-plain tools-icons"></i>
             </p>
             <p class="card-text">
-              I wanted to showcase my skills and personality so I created this portfolio site.
+              I wanted to showcase my skills and personality so I created this personal site.
               I used vanilla HTML, CSS and JS with the help of a few JS libraries
               (<a target=_blank href="https://jquery.com/">jQuery</a>, <a target=_blank href="https://mattboldt.com/typed.js/">typed.js</a>, and <a target=_blank href="http://kenwheeler.github.io/slick/">slick</a>)
               and <a target=_blank href="https://getbootstrap.com/".>Bootstrap</a>.
+              Icons courtesy of <a target=_blank href="https://fontawesome.com/".>Font Awesome</a>
+              and <a target=_blank href="https://konpa.github.io/devicon/".>Devicon</a>
               Through making this, I learned a lot about UI/UX design, responsiveness, and effective CSS styling.
             </p>
           </div>
         </div>
         <div class="card">
           <div class="card-body">
-            <h4 class="card-title">Stock Notifier</h4>
-            <p>
-              <i class="devicon-cplusplus-plain tools-icons"></i>
-            </p>
-            <p class="card-text">
-              Using the <a target=_blank href="https://onion.io/">Omega Onion</a>, two friends and I collaborated to make a stock notifier.
-              It scrapes data from the AlphaVantage API and displays the data on an OLED display.
-              From this experience, I became more familiar with Makefiles, cross-compilation, web scraping, and coordinating tasks on a team.
-            </p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-body">
-            <h4 class="card-title">C#/Python/JS Thing</h4>
+            <h4 class="card-title">VSTS-Confluence Integration</h4>
             <p>
               <i class="devicon-csharp-plain tools-icons"></i>
-              <i class="devicon-python-plain tools-icons"></i>
-              <i class="devicon-javascript-plain tools-icons"></i>
             </p>
-            <p class="card-text">(In progress)</p>
+            <p class="card-text">
+              In order to track completed tasks in VSTS easily, this program will create a blog post in Confluence with the details of that task.
+              It uses the REST APIs of both Microsoft VSTS and Atlassian Confluence as well as the power of C# and .NET framework.
+            </p>
           </div>
         </div>
         <div class="card">
           <div class="card-body">
-            <h4 class="card-title">Blog</h4>
+            <h4 class="card-title">
+              Chitchat
+              <a target=_blank href="https://github.com/willakong/chitchat"><i class="fab fa-github tools-icon-links"></i></a>
+            </h4>
             <p>
-              <i class="fas fa-pencil-alt tools-icons"></i>
+              <i class="devicon-python-plain tools-icons"></i>
             </p>
-            <p class="card-text">(In progress)</p>
+            <p class="card-text">
+              I wanted to figure the inner workings of networks so I experimented with creating a local chatroom.
+              Using the server-side app, you can host a server for people to chat on.
+              Using the client-side app, you can join a server and chat with those on it.
+              It uses TCP/IP sockets, the tkinter GUI library and a kickstart from
+              <a target=_blank href="https://medium.com/swlh/lets-write-a-chat-app-in-python-f6783a9ac170">here</a>.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">
+              Pac-Man
+              <a target=_blank href="https://github.com/willakong/pac-man"><i class="fab fa-github tools-icon-links"></i></a>
+            </h4>
+            <p>
+              <i class="devicon-java-plain tools-icons"></i>
+            </p>
+            <p class="card-text">
+              The classic Pac-Man game written in Java.
+              Featuring a fancy start screen, new power-ups, status pane, player name, and sound effects.
+            </p>
           </div>
         </div>
       </div>

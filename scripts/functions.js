@@ -26,7 +26,7 @@ $(document).ready(function(){
   var scrollLink = $('.scroll');
 
   scrollLink.each(function(){
-    var sectionOffset = $(this.hash).offset().top - 30;
+    var sectionOffset = $(this.hash).offset().top - 40;
     if (sectionOffset <= $(window).scrollTop()) {
       scrollLink.removeClass('active');
       $(this).addClass('active');
@@ -47,7 +47,7 @@ $(document).ready(function(){
     var scrollPos = $(this).scrollTop();
 
     scrollLink.each(function(){
-      var sectionOffset = $(this.hash).offset().top - 30;
+      var sectionOffset = $(this.hash).offset().top - 40;
       if (sectionOffset <= scrollPos) {
         scrollLink.removeClass('active');
         $(this).addClass('active');
