@@ -1,10 +1,21 @@
 $(document).ready(function(){
-  /////////////// Drawing dots canvas ///////////////
+  /////////////// Polka dots canvas ///////////////
+  var max = 50;
+  var w = window.innerWidth;
+  var h = window.innerHeight;
   var canvas = document.getElementById("drawing-canvas");
+  canvas.width = w;
+  canvas.height = h;
   var ctx = canvas.getContext("2d");
-  canvas.width = window.innerWidth;
-  canvas.height = window.innerHeight;
   var radius = 4;
+
+  // Make a colourful dot
+  for (var i = 0; i < max; i++){
+    ctx.beginPath();
+    ctx.arc(Math.floor((Math.random() * w)) , Math.floor((Math.random() * h)), radius, 0, 2*Math.PI, false);
+    ctx.fillStyle = "rgba(" + Math.floor((Math.random() * 255)) + ", " + Math.floor((Math.random() * 255)) + ", " + Math.floor((Math.random() * 255)) + ", 0.8)";
+    ctx.fill();
+  }
 
 /////////////// Click actions ///////////////
   $(document).click(function (event) {
@@ -14,12 +25,6 @@ $(document).ready(function(){
     if (opened === true && !clickover.hasClass("navbar-toggler")) {
         $(".navbar-toggler").click();
     }
-
-    // Make a colourful dot
-    ctx.beginPath();
-    ctx.arc(event.clientX, event.clientY, radius, 0, 2*Math.PI, false);
-    ctx.fillStyle = "rgba(" + Math.floor((Math.random() * 255)) + ", " + Math.floor((Math.random() * 255)) + ", " + Math.floor((Math.random() * 255)) + ", 0.8)";
-    ctx.fill();
   });
 
   /////////////// Set active class when loaded ///////////////
