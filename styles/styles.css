@@ -1,0 +1,12 @@
+.menu-bar {
+  background-color: #FFFAFA;
+}
+
+#effects {
+  background-color: #FFFAFA;
+  position: fixed;
+  z-index: -9999;
+}
+
+.content {
+}
