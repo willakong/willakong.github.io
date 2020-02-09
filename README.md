@@ -1,9 +1,11 @@
 # Personal Site
 > My little corner of the Internet
 
-A personal site with bits and pieces about me sprinkled.
+A personal site with bits and pieces about me sprinkled with a style unique to me.
 
 ## Features
-- Blazing fast speeds thanks to Gatsby.js
-- GraphQL querying dynamic data
-- Minimalist style
+- Fancy jQuery animations
+- Snowing colourful dots
+- Dark and light mode
+- Actual content about me
+- Contact form
