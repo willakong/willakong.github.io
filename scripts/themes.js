@@ -1,5 +1,5 @@
-let lightMode = "<i class=\"far fa-sun theme-icon\"></i>";
-let darkMode = "<i class=\"far fa-moon theme-icon\"></i>";
+let lightMode = "<i class=\"fas fa-sun theme-icon\"></i>";
+let darkMode = "<i class=\"fas fa-moon theme-icon\"></i>";
 
 let systemInitiatedDark = window.matchMedia("(prefers-color-scheme: dark)");
 let theme = sessionStorage.getItem('theme');

@@ -34,6 +34,7 @@ h1 {
 #notes-iframe {
   width: 1px;
   min-width: 100%;
+  overflow-x: scroll;
 }
 
 #effects {
