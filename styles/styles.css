@@ -8,5 +8,28 @@
   z-index: -9999;
 }
 
-.content {
+.green {
+  background-color: #D4F7D6;
+}
+
+a {
+  color: #993955;
+}
+
+.link:hover {
+  text-decoration-style: dotted;
+  color: #D0A5B1;
+}
+
+.icon:hover {
+  text-decoration: none;
+  color: #D0A5B1;
+  height: 50px;
+  width: 50px;
+}
+
+.project-icons {
+  color: #2F505A;
+  height: 50px;
+  width: 50px;
 }

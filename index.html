@@ -1,11 +1,23 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-145111498-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-145111498-1');
+    </script>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="assets/website-icon.png" type="image/png" />
 
     <title>Willa Kong</title>
   </head>
@@ -28,39 +40,138 @@
               <a class="nav-link scroll" href="#projects">Projects</a>
             </li>
             <li class="nav-item">
+              <a class="nav-link scroll" href="#notes">Notes</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link scroll" href="#contact">Contact</a>
             </li>
           </ul>
         </div>
       </nav>
 
-      <div class="content row d-flex flex-grow-1 w-100 m-0 overflow-scroll">
+      <div id="content" class="row d-flex flex-grow-1 w-100 m-0 overflow-scroll px-5">
         <section id="home" class="d-flex w-100 min-vh-100">
-          <h1 class="w-100 text-center align-self-center">Hiya.</h1>
+          <div class="w-100 text-center align-self-center">
+            <h1>Hiya.</h1>
+            <h1>I'm &lt; Willa Kong /&gt;</h1>
+          </div>
         </section>
 
         <section id="about" class="d-flex w-100 min-vh-100">
-          <h1 class="w-100 text-center align-self-center">F</h1>
+          <div class="w-100">
+            <h1>About</h1>
+            <a class="icon" href="https://github.com/willakong" target="_blank"><i class="devicon-github-plain"></i></a>
+            <a class="icon" href="https://linkedin.com/in/willakong/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <p>Download the PDF of my resume <a class="link" href="resume.pdf" download>here</a>.</p>
+            <p></p>
+          </div>
         </section>
 
         <section id="projects" class="d-flex w-100 min-vh-100">
-          <h1 class="w-100 text-center align-self-center">M</h1>
+          <div class="w-100">
+            <h1>Projects</h1>
+
+            <div class="row row-cols-1 row-cols-md-2">
+              <div class="col mb-4">
+                <div class="card">
+                  <div class="card-header green">
+                    Blank Space
+                    <i class="devicon-html5-plain project-icons"></i>
+                    <i class="devicon-css3-plain project-icons"></i>
+                    <i class="devicon-javascript-plain project-icons"></i>
+
+                    <a class="icon" href="https://github.com/willakong/blank-space" target="_blank"><i class="devicon-github-plain"></i></a class="link">
+                    <a class="link" href="https://willakong.com/blank-space/" target="_blank">Live</a class="link">
+                  </div>
+                  <div class="card-body">
+                    Blank Space, inspired off of The Thoughts Room by The Quiet Place Project (now down), represents a space to type away worries and watch them fade away. Not only was this a fun project to practice JavaScript animation effects but it also served as a stress reliever as no one would judge what I typed. There's just something so satisfying as watching my stress dissolve into the pixels of my screen.
+                  </div>
+
+                </div>
+              </div>
+              <div class="col mb-4">
+                <div class="card">
+                  <div class="card-header green">
+                    Chitchat
+                    <i class="devicon-python-plain project-icons"></i>
+
+                    <a class="link" href="https://github.com/willakong/chitchat" target="_blank"><i class="devicon-github-plain"></i></a class="link">
+                  </div>
+                  <div class="card-body">
+                    I wanted to figure the inner workings of networks so I experimented with creating a local chatroom. Using the server-side app, you can host a server for people to chat on. Using the client-side app, you can join a server and chat with those on it. It uses TCP/IP sockets, the tkinter GUI library and a kickstart from <a class="link" href="https://medium.com/swlh/lets-write-a-chat-app-in-python-f6783a9ac170" target="_blank">here</a class="link">.
+                  </div>
+                </div>
+              </div>
+              <div class="col mb-4">
+                <div class="card">
+                  <div class="card-header green">
+                    PacMan
+                    <i class="devicon-java-plain project-icons"></i>
+
+                    <a class="link" href="https://github.com/willakong/pac-man" target="_blank"><i class="devicon-github-plain"></i></a class="link">
+                  </div>
+                  <div class="card-body">
+                    The classic Pac-Man game written in Java. Featuring a fancy start screen, new power-ups, status pane, player name, and sound effects.
+                    This was one of my first programming projects where I probably spent way too long adding new features here and there. It was exciting being able to write a few lines of code and seeing how it made the game gain more personality.
+                  </div>
+                </div>
+              </div>
+              <div class="col mb-4">
+                <div class="card">
+                  <div class="card-header green">
+                    Personal Site
+                    <i class="devicon-html5-plain project-icons"></i>
+                    <i class="devicon-css3-plain project-icons"></i>
+                    <i class="devicon-javascript-plain project-icons"></i>
+
+                    <a class="link" href="https://github.com/willakong/willakong.github.io" target="_blank"><i class="devicon-github-plain"></i></a class="link">
+                  </div>
+                  <div class="card-body">
+                    I created this site using HTML, CSS Bootstrap 4, and JavaScript. This would be used to display my personal achievements and notes. From this, I learned web development and strengthened my JavaScript foundations.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="notes" class="d-flex w-100 min-vh-100">
+          <div class="w-100">
+            <h1>Notes</h1>
+            <p>I'm currently studying at the University of Waterloo for Computer Engineering. I'll be putting my condensed notes <a class="link" href="http://gestyy.com/w75BRW" target="_blank">here</a>. Feel free to refer to them.</p>
+            <iframe src="https://drive.google.com/embeddedfolderview?id=1W-JA1pBuEwx1omjQwCLRxkdBtLPFsmUy#list" style="width:100%; height:600px; border:0;"></iframe>
+          </div>
         </section>
 
         <section id="contact" class="d-flex w-100 min-vh-100">
-          <h1 class="w-100 text-center align-self-center">L</h1>
+          <div class="w-100 align-self-center">
+            <h1 class="my-5">If you have any questions, feel free to contact me!</h1>
+            <form method="post" action="https://formspree.io/willakong8@gmail.com">
+              <div class="form-row">
+                <div class="col-sm form-group">
+                  <input class="form-control" type="text" name="name" id="name" placeholder="Name" required />
+                </div>
+                <div class="col-sm form-group">
+                  <input class="form-control" type="email" name="email" id="email" placeholder="Email" required />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="col form-group">
+                  <textarea class="form-control" name="message" id="message" placeholder="Message" rows="4" required></textarea>
+                </div>
+              </div>
+              <button class="btn btn-dark" type="submit" value="Send">Send</button>
+            </form>
+          </div>
         </section>
-
-
-
-
-
       </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"></script>
     <script src="scripts/effects.js"></script>
+    <script src="scripts/scrolling.js"></script>
   </body>
 </html>
