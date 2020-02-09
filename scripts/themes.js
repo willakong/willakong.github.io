@@ -28,17 +28,6 @@ function prefersColorTest(systemInitiatedDark) {
 }
 systemInitiatedDark.addListener(prefersColorTest);
 
-if (theme === "dark") {
-  document.documentElement.setAttribute('data-theme', 'dark');
-  sessionStorage.setItem('theme', 'dark');
-  themeToggler.innerHTML = lightMode;
-}
-else if (theme === "light") {
-  document.documentElement.setAttribute('data-theme', 'light');
-  sessionStorage.setItem('theme', 'light');
-  themeToggler.innerHTML = darkMode;
-}
-
 function changeTheme() {
   let theme = sessionStorage.getItem('theme');
   let themeToggler = document.getElementById("theme-toggler");
@@ -64,3 +53,14 @@ function changeTheme() {
 		themeToggler.innerHTML = lightMode;
 	}
 };
+
+if (theme === "dark") {
+  document.documentElement.setAttribute('data-theme', 'dark');
+  sessionStorage.setItem('theme', 'dark');
+  themeToggler.innerHTML = lightMode;
+}
+else if (theme === "light") {
+  document.documentElement.setAttribute('data-theme', 'light');
+  sessionStorage.setItem('theme', 'light');
+  themeToggler.innerHTML = darkMode;
+}

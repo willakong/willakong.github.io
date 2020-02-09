@@ -74,21 +74,8 @@ h1 {
   color: var(--links-hover);
 }
 
-/************* Dark Theme *************/
-html, html[data-theme="dark"] {
-  --background-color: #0D1B1E;
-  --text-color: #FFFAFA;
-  --card-body-color: #212529;
-  --green: #417046;
-  --nav-hover: #E59F71;
-  --links: #C793A2;
-  --links-hover: #BE8192;
-  --icon-hover: #BE8192;
-  --project-icon: #bd9bff;
-}
-
 /************* Light Theme *************/
-html[data-theme="light"] {
+html, html[data-theme="light"] {
   --background-color: #FFFAFA;
   --text-color: #0D1B1E;
   --card-body-color: #FFFF;
@@ -97,6 +84,19 @@ html[data-theme="light"] {
   --links: #993955;
   --links-hover: #D0A5B1;
   --icon-hover: #D0A5B1;
+  --project-icon: #bd9bff;
+}
+
+/************* Dark Theme *************/
+html[data-theme="dark"] {
+  --background-color: #0D1B1E;
+  --text-color: #FFFAFA;
+  --card-body-color: #212529;
+  --green: #417046;
+  --nav-hover: #E59F71;
+  --links: #C793A2;
+  --links-hover: #BE8192;
+  --icon-hover: #BE8192;
   --project-icon: #bd9bff;
 }
 
