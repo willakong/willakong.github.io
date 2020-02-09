@@ -29,7 +29,8 @@ h1 {
 #notes-list {
   background-color: rgba(255,255,255,0.3);
   border-radius: 15px;
-  overflow: scroll;
+  width: 1px;
+  min-width: 100%;
 }
 
 #effects {
