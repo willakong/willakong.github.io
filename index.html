@@ -25,25 +25,29 @@
     <canvas id="effects"></canvas>
 
     <div class="container-fluid d-flex flex-column h-100 min-vh-100 p-0">
-      <nav class="menu-bar navbar sticky-top navbar-expand-sm navbar-light">
-        <a class="navbar-brand scroll active" href="#home">Willa</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuItems" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+      <nav class="menu-bar navbar sticky-top navbar-expand-sm">
+        <a class="navbar-brand scroll nav-text m-0 active" href="#home">Willa</a>
+
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a id="theme-toggler" class="nav-link" href="javascript:void(0);"></a>
+          </li>
+        </ul>
+
+        <button class="navbar-toggler nav-text" type="button" data-toggle="collapse" data-target="#menuItems" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
         </button>
 
         <div class="collapse navbar-collapse" id="menuItems">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link scroll" href="#about">About</a>
+              <a class="nav-link scroll nav-text" href="#portfolio">Portfolio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link scroll" href="#projects">Projects</a>
+              <a class="nav-link scroll nav-text" href="#notes">Notes</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link scroll" href="#notes">Notes</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link scroll" href="#contact">Contact</a>
+              <a class="nav-link scroll nav-text" href="#contact">Contact</a>
             </li>
           </ul>
         </div>
@@ -54,36 +58,29 @@
           <div class="w-100 text-center align-self-center">
             <h1>Hiya.</h1>
             <h1>I'm &lt; Willa Kong /&gt;</h1>
+            <a class="icon mx-3" href="https://github.com/willakong" target="_blank"><i class="devicon-github-plain"></i></a>
+            <a class="icon mx-3" href="https://linkedin.com/in/willakong/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a class="icon mx-3" href="resume.pdf" download><i class="far fa-file"></i></a>
           </div>
         </section>
 
-        <section id="about" class="d-flex w-100 min-vh-100">
+        <section id="portfolio" class="d-flex w-100 min-vh-100">
           <div class="w-100">
-            <h1>About</h1>
-            <a class="icon" href="https://github.com/willakong" target="_blank"><i class="devicon-github-plain"></i></a>
-            <a class="icon" href="https://linkedin.com/in/willakong/" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <p>Download the PDF of my resume <a class="link" href="resume.pdf" download>here</a>.</p>
-            <p></p>
-          </div>
-        </section>
-
-        <section id="projects" class="d-flex w-100 min-vh-100">
-          <div class="w-100">
-            <h1>Projects</h1>
+            <h1>Portfolio</h1>
 
             <div class="row row-cols-1 row-cols-md-2">
               <div class="col mb-4">
                 <div class="card">
-                  <div class="card-header green">
+                  <div class="card-header card-header-color">
                     Blank Space
                     <i class="devicon-html5-plain project-icons"></i>
                     <i class="devicon-css3-plain project-icons"></i>
                     <i class="devicon-javascript-plain project-icons"></i>
 
-                    <a class="icon" href="https://github.com/willakong/blank-space" target="_blank"><i class="devicon-github-plain"></i></a class="link">
+                    <a class="link" href="https://github.com/willakong/blank-space" target="_blank"><i class="devicon-github-plain"></i></a class="link">
                     <a class="link" href="https://willakong.com/blank-space/" target="_blank">Live</a class="link">
                   </div>
-                  <div class="card-body">
+                  <div class="card-body card-body-color">
                     Blank Space, inspired off of The Thoughts Room by The Quiet Place Project (now down), represents a space to type away worries and watch them fade away. Not only was this a fun project to practice JavaScript animation effects but it also served as a stress reliever as no one would judge what I typed. There's just something so satisfying as watching my stress dissolve into the pixels of my screen.
                   </div>
 
@@ -91,26 +88,26 @@
               </div>
               <div class="col mb-4">
                 <div class="card">
-                  <div class="card-header green">
+                  <div class="card-header card-header-color">
                     Chitchat
                     <i class="devicon-python-plain project-icons"></i>
 
                     <a class="link" href="https://github.com/willakong/chitchat" target="_blank"><i class="devicon-github-plain"></i></a class="link">
                   </div>
-                  <div class="card-body">
+                  <div class="card-body card-body-color">
                     I wanted to figure the inner workings of networks so I experimented with creating a local chatroom. Using the server-side app, you can host a server for people to chat on. Using the client-side app, you can join a server and chat with those on it. It uses TCP/IP sockets, the tkinter GUI library and a kickstart from <a class="link" href="https://medium.com/swlh/lets-write-a-chat-app-in-python-f6783a9ac170" target="_blank">here</a class="link">.
                   </div>
                 </div>
               </div>
               <div class="col mb-4">
                 <div class="card">
-                  <div class="card-header green">
+                  <div class="card-header card-header-color">
                     PacMan
                     <i class="devicon-java-plain project-icons"></i>
 
                     <a class="link" href="https://github.com/willakong/pac-man" target="_blank"><i class="devicon-github-plain"></i></a class="link">
                   </div>
-                  <div class="card-body">
+                  <div class="card-body card-body-color">
                     The classic Pac-Man game written in Java. Featuring a fancy start screen, new power-ups, status pane, player name, and sound effects.
                     This was one of my first programming projects where I probably spent way too long adding new features here and there. It was exciting being able to write a few lines of code and seeing how it made the game gain more personality.
                   </div>
@@ -118,7 +115,7 @@
               </div>
               <div class="col mb-4">
                 <div class="card">
-                  <div class="card-header green">
+                  <div class="card-header card-header-color">
                     Personal Site
                     <i class="devicon-html5-plain project-icons"></i>
                     <i class="devicon-css3-plain project-icons"></i>
@@ -126,8 +123,25 @@
 
                     <a class="link" href="https://github.com/willakong/willakong.github.io" target="_blank"><i class="devicon-github-plain"></i></a class="link">
                   </div>
-                  <div class="card-body">
+                  <div class="card-body card-body-color">
                     I created this site using HTML, CSS Bootstrap 4, and JavaScript. This would be used to display my personal achievements and notes. From this, I learned web development and strengthened my JavaScript foundations.
+                  </div>
+                </div>
+              </div>
+              <div class="col mb-4">
+                <div class="card">
+                  <div class="card-header card-header-color">
+                    Project Euler
+                    <i class="devicon-cplusplus-plain project-icons"></i>
+
+                    <a class="link" href="https://projecteuler.net/progress=willatreee" target="_blank"><i class="fas fa-user-circle"></i></a class="link">
+                  </div>
+                  <div class="card-body card-body-color">
+                    <div class="text-center mb-4">
+                      <img src="https://projecteuler.net/profile/willatreee.png" alt="My Project Euler profile" class="w-30">
+                    </div>
+                    <a class="link" href="https://projecteuler.net/" target="_blank">Project Euler</a> is an archive of interesting mathematical problems that can solved through programming languages. Project Euler isn't focused on the language used but rather the technique and problem solving necessary to come up with the right answer.
+                    Thus, in my spare time, I solve Project Euler questions in C++. This helps to hone my C++ skills and sharpen my problem-solving skills. Also, math is fun so doing these problems is a plus.
                   </div>
                 </div>
               </div>
@@ -138,8 +152,10 @@
         <section id="notes" class="d-flex w-100 min-vh-100">
           <div class="w-100">
             <h1>Notes</h1>
-            <p>I'm currently studying at the University of Waterloo for Computer Engineering. I'll be putting my condensed notes <a class="link" href="http://gestyy.com/w75BRW" target="_blank">here</a>. Feel free to refer to them.</p>
-            <iframe src="https://drive.google.com/embeddedfolderview?id=1W-JA1pBuEwx1omjQwCLRxkdBtLPFsmUy#list" style="width:100%; height:600px; border:0;"></iframe>
+            <p>I'm currently studying at the University of Waterloo for Computer Engineering. I'll be putting my condensed notes <a class="link" href="https://drive.google.com/drive/u/1/folders/1W-JA1pBuEwx1omjQwCLRxkdBtLPFsmUy" target="_blank">here</a>. Feel free to refer to them.</p>
+            <div id="notes-list" class="w-100 h-50">
+              <iframe class="w-100 h-100 border-0" src="https://drive.google.com/embeddedfolderview?id=1W-JA1pBuEwx1omjQwCLRxkdBtLPFsmUy#list"></iframe>
+            </div>
           </div>
         </section>
 
@@ -168,9 +184,12 @@
     </div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="scripts/themes.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"></script>
+
     <script src="scripts/effects.js"></script>
     <script src="scripts/scrolling.js"></script>
   </body>
