@@ -29,9 +29,11 @@ h1 {
 #notes-list {
   background-color: rgba(255,255,255,0.3);
   border-radius: 15px;
+}
+
+#notes-iframe {
   width: 1px;
   min-width: 100%;
-  width: 100%;
 }
 
 #effects {
