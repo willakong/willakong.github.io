@@ -2,7 +2,7 @@ var scrollLink = $('.scroll');
 
 function setActiveClass(scrollPos) {
   scrollLink.each(function(){
-    var sectionOffset = $(this.hash).offset().top - 120;
+    var sectionOffset = $(this.hash).offset().top - 100;
     if (sectionOffset <= scrollPos) {
       scrollLink.removeClass('active');
       $(this).addClass('active');
@@ -16,7 +16,7 @@ $( function() {
   scrollLink.click(function(e) {
     e.preventDefault();
     $('body,html').animate({
-      scrollTop: $(this.hash).offset().top - 80
+      scrollTop: $(this.hash).offset().top - 60
     }, 1000 );
   });
 });
