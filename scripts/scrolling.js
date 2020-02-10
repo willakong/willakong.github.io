@@ -24,6 +24,4 @@ $( function() {
 $( window ).scroll(function(){
   var scrollPos = $(this).scrollTop();
   setActiveClass(scrollPos);
-
-  document.activeElement.blur()
 });
