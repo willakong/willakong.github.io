@@ -19,15 +19,16 @@ h1 {
 }
 
 .card-header-color {
-  background-color: var(--green);
+  background-color: var(--background-color);
+  border-bottom: var(--card-header-border);
 }
 
 .card-body-color {
-  background-color: var(--card-body-color);
+  background-color: var(--background-color);
 }
 
 #notes-list {
-  background-color: rgba(255,255,255,0.6);
+  background-color: var(--notes-background-color);
   border-radius: 15px;
 }
 
@@ -78,26 +79,26 @@ h1 {
 html, html[data-theme="light"] {
   --background-color: #FFFAFA;
   --text-color: #0D1B1E;
-  --card-body-color: #FFFF;
-  --green: #D4F7D6;
   --nav-hover: #E59F71;
   --links: #993955;
   --links-hover: #D0A5B1;
   --icon-hover: #D0A5B1;
   --project-icon: #bd9bff;
+  --card-header-border: 1px solid rgba(0,0,0,.125);
+  --notes-background-color: #FFFAFA;
 }
 
 /************* Dark Theme *************/
 html[data-theme="dark"] {
   --background-color: #0D1B1E;
   --text-color: #FFFAFA;
-  --card-body-color: #212529;
-  --green: #417046;
   --nav-hover: #E59F71;
   --links: #C793A2;
   --links-hover: #BE8192;
   --icon-hover: #BE8192;
   --project-icon: #bd9bff;
+  --card-header-border: 1px solid rgba(255, 255, 255);
+  --notes-background-color: #FFFAFA;
 }
 
 /************* Preference *************/
@@ -105,24 +106,24 @@ html[data-theme="dark"] {
 	html, html[data-theme="dark"] {
     --background-color: #0D1B1E;
     --text-color: #FFFAFA;
-    --card-body-color: #212529;
-    --green: #417046;
     --nav-hover: #E59F71;
     --links: #C793A2;
     --links-hover: #BE8192;
     --icon-hover: #BE8192;
     --project-icon: #bd9bff;
+    --card-header-border: 1px solid rgba(255, 255, 255);
+    --notes-background-color: #FFFAFA;
 	}
 
 	html[data-theme="light"] {
     --background-color: #FFFAFA;
     --text-color: #0D1B1E;
-    --card-body-color: #FFFF;
-    --green: #D4F7D6;
     --nav-hover: #E59F71;
     --links: #993955;
     --links-hover: #D0A5B1;
     --icon-hover: #D0A5B1;
     --project-icon: #bd9bff;
+    --card-header-border: 1px solid rgba(0,0,0,.125);
+    --notes-background-color: #FFFAFA;
 	}
 }
