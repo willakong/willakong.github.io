@@ -14,7 +14,7 @@ h1 {
   color: var(--text-color) !important;
 }
 
-.active, .nav-text:hover {
+nav.active, .nav-text:hover {
   color: var(--nav-hover) !important;
 }
 
