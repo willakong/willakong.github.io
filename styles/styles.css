@@ -37,8 +37,7 @@ nav.active, .nav-text:hover {
 }
 
 #notes-iframe {
-  width: 1px;
-  min-width: 100%;
+  width: 100%;
 }
 
 #effects {
