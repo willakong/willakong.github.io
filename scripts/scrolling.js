@@ -29,13 +29,5 @@ $( function() {
       lastId = id;
       scrollLink.filter("[href='#"+id+"']").addClass("active");
     }
-
-
   });
-
-
-
-
-
-
 });
