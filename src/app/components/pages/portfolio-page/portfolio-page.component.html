@@ -1,0 +1,54 @@
+<div class="portfolio-container" [style.opacity]="displayModal ? 0.3 : 1">
+  <h1 class="header">Portfolio</h1>
+
+  <div class="portfolio-items-container">
+    <div *ngFor="let item of portfolioItems">
+      <div class="portfolio-item">
+        <div class="heading">
+          <div class="title" (click)="showModal(item)">{{ item.title }}</div>
+          <div class="icons-container">
+            <div *ngFor="let devicon of item.devicons">
+              <div [innerHTML]="devicon"></div>
+            </div>
+            <div *ngIf="item.links" class="links-container">
+              <div *ngFor="let link of item.links">
+                <div class="link-item">
+                  <a [href]="link.href" target="_blank">
+                    <div [innerHTML]="link.text"></div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="description" [innerHTML]="item.description"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div *ngIf="displayModal" class="portfolio-modal" (click)="hideModal()">
+  <div *ngIf="currPortfolioItem">
+    <div class="title">{{ currPortfolioItem.title }}</div>
+    <div class="icons-container">
+      <div *ngFor="let devicon of currPortfolioItem.devicons">
+        <div [innerHTML]="devicon"></div>
+      </div>
+    </div>
+    <div class="links-container">
+      <div *ngFor="let link of currPortfolioItem.links">
+        <a href="link.href" target="_blank">
+          <div [innerHTML]="link.text"></div>
+        </a>
+      </div>
+    </div>
+    <div class="images-container">
+      <div *ngFor="let image of currPortfolioItem.images">
+        <img [src]="image">
+      </div>
+    </div>
+    <div [innerHTML]="currPortfolioItem.description"></div>
+  </div>
+</div>

@@ -1,0 +1,39 @@
+@import '../../../vars';
+
+.nav-container {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  background-color: $header-background;
+
+  .nav-bar {
+
+    .nav-link,
+    .nav-link:visited {
+      margin: 0 10px;
+      text-decoration: none;
+      color: $text;
+
+      &:before,
+      &:after {
+        content: '';
+        display: inline-block;
+        margin: 0 5px;
+        width: 8px;
+        height: 8px;
+        vertical-align: middle;
+        border-radius: 3px;
+        background-color: $header-background;
+      }
+    }
+
+    .nav-link:active,
+    .nav-link:hover,
+    .active {
+      &:before,
+      &:after {
+        background-color: $text !important;
+      }
+    }
+  }
+}

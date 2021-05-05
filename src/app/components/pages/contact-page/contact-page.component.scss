@@ -1,0 +1,71 @@
+@import '../../../../vars';
+
+$field-width: 80%;
+$button-left-margin: (100% - $field-width) / 2;
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+
+  .description {
+    width: 100%;
+    text-align: center;
+  }
+
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    width: 100%;
+
+    & form {
+      width: 100%;
+    }
+
+    .form-item {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+      margin-bottom: 20px;
+
+      & label {
+        width: $field-width;
+      }
+
+      & input {
+        height: 30px;
+        width: $field-width;
+        font-family: $font-family;
+      }
+
+      & textarea{
+        height: 100px;
+        width: $field-width;
+        font-family: $font-family;
+      }
+    }
+
+    .button-container {
+      width: 100%;
+
+      .submit-button {
+        height: 30px;
+        width: 100px;
+        margin-left: $button-left-margin;
+        background-color: $submit-btn-bg;
+        color: $text;
+      }
+
+      .sent-text {
+        margin-left: 10px;
+        font-style: italic;
+      }
+    }
+  }
+}

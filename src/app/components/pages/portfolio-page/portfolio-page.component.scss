@@ -1,0 +1,83 @@
+@import '../../../../vars';
+
+.portfolio-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+
+  .portfolio-items-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .portfolio-item {
+      max-width: 300px;
+      margin: 10px 20px;
+      border: 1px solid $text;
+      border-radius: 3px;
+
+      .heading {
+        border-bottom: 1px solid $text;
+        padding: 10px 20px;
+
+        .icons-container {
+          display: flex;
+          flex-direction: row;
+
+          .links-container {
+            margin-left: 5px;
+            display: flex;
+            flex-direction: row;
+
+            .link-item {
+              margin-right: 5px;
+
+              i {
+                text-decoration: none;
+              }
+            }
+          }
+        }
+      }
+
+      .description {
+        padding: 10px 20px;
+      }
+    }
+  }
+}
+
+.portfolio-modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  z-index: 999;
+  background-color: $modal-background;
+
+  .title {
+
+  }
+
+  .icons-container {
+
+  }
+
+  .links-container {
+
+  }
+
+  .description {
+
+  }
+
+
+
+
+
+ }

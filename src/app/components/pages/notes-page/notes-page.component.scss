@@ -1,0 +1,21 @@
+.notes-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+
+  .description {
+    text-align: center;
+  }
+
+  .notes-list {
+    flex-grow: 1;
+    width: 100%;
+
+    & iframe {
+      height: 100%;
+      width: 100%;
+      border: none;
+    }
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "portfolio": [
+    {
+      "title": "Handwriting Autocorrect",
+      "devicons": [
+        "<i class='devicon-python-plain'></i>"
+      ],
+      "links": [
+        {
+          "text": "<i class=\"devicon-github-plain\"></i>",
+          "href": "https://github.com/SteveMunch01/SupremeUofT"
+        },
+        {
+          "text": "Devpost",
+          "href": "https://devpost.com/software/supremeuoft"
+        }
+      ],
+      "description": "For the Hackathon <a href=\"https://ieee.utoronto.ca/makeuoft/\" target=\"_blank\">MakeUofT</a>, my team and I made a handwriting autocorrect application using a Raspberry Pi, Tesseract OCR, Textblob NLP, and Solace for the messaging queue. I refined my skills in machine learning, and using APIs in regards to the Solace messaging queue. Additionally, I was able to learn how to work in a high pressure time period and create a working product."
+    },
+    {
+      "title": "Blank Space",
+      "devicons": [
+        "<i class='devicon-html5-plain'></i>",
+        "<i class='devicon-css3-plain'></i>",
+        "<i class='devicon-javascript-plain'></i>"
+      ],
+      "links": [
+        {
+          "text": "<i class=\"devicon-github-plain\"></i>",
+          "href": "https://github.com/willakong/blank-space"
+        },
+        {
+          "text": "Live",
+          "href": "https://willakong.com/blank-space/"
+        }
+      ],
+      "description": "Blank Space, inspired off of The Thoughts Room by The Quiet Place Project (now down), represents a space to type away worries and watch them fade away. Not only was this a fun project to practice JavaScript animation effects but it also served as a stress reliever as no one would judge what I typed. There's just something so satisfying as watching my stress dissolve into the pixels of my screen."
+    },
+    {
+      "title": "Chitchat",
+      "devicons": [
+        "<i class='devicon-python-plain'></i>"
+      ],
+      "links": [
+        {
+          "text": "<i class=\"devicon-github-plain\"></i>",
+          "href": "https://github.com/willakong/chitchat"
+        }
+      ],
+      "description": "I wanted to figure the inner workings of networks so I experimented with creating a local chatroom. Using the server-side app, you can host a server for people to chat on. Using the client-side app, you can join a server and chat with those on it. It uses TCP/IP sockets, the tkinter GUI library and a kickstart from <a href=\"https://medium.com/swlh/lets-write-a-chat-app-in-python-f6783a9ac170\" target=\"_blank\">here</a>."
+    },
+    {
+      "title": "PacMan",
+      "devicons": [
+        "<i class='devicon-java-plain'></i>"
+      ],
+      "links": [
+        {
+          "text": "<i class=\"devicon-github-plain\"></i>",
+          "href": "https://github.com/willakong/pac-man"
+        }
+      ],
+      "description": "The classic Pac-Man game written in Java. Featuring a fancy start screen, new power-ups, status pane, player name, and sound effects. This was one of my first programming projects where I probably spent way too long adding new features here and there. It was exciting being able to write a few lines of code and seeing how it made the game gain more personality."
+    },
+    {
+      "title": "Personal Site",
+      "devicons": [
+        "<i class='devicon-html5-plain'></i>",
+        "<i class='devicon-css3-plain'></i>",
+        "<i class='devicon-javascript-plain'></i>"
+      ],
+      "links": [
+        {
+          "text": "<i class=\"devicon-github-plain\"></i>",
+          "href": "https://github.com/willakong/willakong.github.io"
+        }
+      ],
+      "description": "I created this site using Angular. I wanted to illustrate what I've learned in my co-op by updating my website. This helps to not only show my achievements but also demonstrate key web development skills such as responsive web design, pagination, and modular front-end components."
+    },
+    {
+      "title": "Project Euler",
+      "devicons": [
+        "<i class='devicon-cplusplus-plain'></i>"
+      ],
+      "links": [
+        {
+          "text": "<i class=\"fas fa-user-circle\"></i>",
+          "href": "https://projecteuler.net/progress=willatreee"
+        }
+      ],
+      "images": [
+        "https://projecteuler.net/profile/willatreee.png"
+      ],
+      "description": "<a href=\"https://projecteuler.net/\" target=\"_blank\">Project Euler</a> is an archive of interesting mathematical problems that can solved through programming languages. Project Euler focuses on the technique and problem solving necessary to come up with the right answer. Thus, I hone my C++ skills and sharpen my problem-solving skills by solving these problems."
+    }
+  ]
+}

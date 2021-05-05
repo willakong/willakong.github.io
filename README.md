@@ -1,11 +1,8 @@
-# Personal Site
-> My little corner of the Internet
-
-A personal site with bits and pieces about me sprinkled with a style unique to me.
+# Portfolio Site
+This is my portfolio site meant to illustrate my achievements and tell people more a bit about myself.
 
 ## Features
-- Fancy jQuery animations
-- Snowing colourful dots
-- Dark and light mode
-- Actual content about me
+- Canvas animation
+- Pages
+- Responsive
 - Contact form

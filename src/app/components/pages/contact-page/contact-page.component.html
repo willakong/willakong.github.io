@@ -1,0 +1,24 @@
+<div class="contact-container">
+  <h1 class="header">Contact</h1>
+  <p class="description">Hi there! If you have any questions for me, feel free to contact me by filling in the form. Thanks!</p>
+  <div class="form-container">
+    <form [formGroup]="form" (submit)="submitForm()">
+      <div class="form-item">
+        <label for="name">Name</label>
+        <input formControlName="name" type="text" placeholder="Name" required />
+      </div>
+      <div class="form-item">
+        <label for="email">Email</label>
+        <input formControlName="email" type="email" placeholder="Email" required />
+      </div>
+      <div class="form-item">
+        <label for="message">Your Message</label>
+        <textarea formControlName="message" placeholder="Your Message" rows="4" required></textarea>
+      </div>
+      <div class="button-container">
+        <button class="submit-button" type="submit">Send</button>
+        <span *ngIf="hasSent" class="sent-text">Sent!</span>
+      </div>
+    </form>
+  </div>
+</div>

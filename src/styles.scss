@@ -1,0 +1,27 @@
+/* Global styles */
+
+@import 'vars';
+
+html, body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  font-family: 'Bitter';
+
+  background-color: $background;
+  color: $text;
+}
+
+a {
+  color: $link-text;
+}
+
+a:hover {
+  cursor: pointer !important;
+  color: $link-text-hover;
+}
+
+h1.header {
+  text-align: center;
+  margin-top: 0;
+}

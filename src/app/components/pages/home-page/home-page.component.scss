@@ -1,0 +1,68 @@
+@import '../../../../vars';
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+
+  .background-animation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+  }
+
+  .header {
+    font-size: xxx-large;
+  }
+
+  .social-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    z-index: 999;
+
+    .social-icon {
+      margin: 0 10px;
+      font-size: xx-large;
+      text-decoration: none;
+
+      & mat-icon {
+        font-size: xx-large;
+      }
+    }
+  }
+
+  .subtitle {
+    width: 80%;
+    opacity: 0.8;
+    z-index: 999;
+
+    .move-on {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+
+      p {
+        margin: 0;
+        margin-top: 2px;
+      }
+
+      & mat-icon {
+        color: $link-text;
+        vertical-align: center;
+        margin: 0 5px;
+      }
+
+      & mat-icon:hover {
+        cursor: pointer !important;
+        color: $link-text-hover;
+      }
+    }
+  }
+}
