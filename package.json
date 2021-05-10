@@ -8,6 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
+    "deploy": "npm run deploy-build && npm run deploy-ghpages",
     "deploy-build": "ng build --prod",
     "deploy-ghpages": "npx angular-cli-ghpages --dir=dist/site"
   },
