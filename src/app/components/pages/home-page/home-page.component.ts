@@ -1,11 +1,9 @@
-import { Component, OnInit, AfterViewInit, ElementRef, ViewChild, HostListener } from '@angular/core';
+import { Component, OnInit, AfterViewInit, ElementRef, ViewChild, HostListener, ChangeDetectorRef } from '@angular/core';
 import { Router } from '@angular/router';
-import { Subject } from 'rxjs';
 
 import { Particle } from '../../../models/Particle';
 
-const maxParticles = 100;
-const timeUntilIdle = 60 * 1000;  // in ms, 60s
+const maxParticles = 50;
 
 @Component({
   selector: 'app-home-page',
@@ -15,6 +13,7 @@ const timeUntilIdle = 60 * 1000;  // in ms, 60s
 export class HomePageComponent implements OnInit, AfterViewInit {
   @ViewChild('animation', { static: false })
   animationCanvas: ElementRef<HTMLCanvasElement>;
+
   private context: CanvasRenderingContext2D;
   private canvasWidth: number;
   private canvasHeight: number;
@@ -22,18 +21,19 @@ export class HomePageComponent implements OnInit, AfterViewInit {
   private particles: Particle[] = [];
   private drawInterval: number;
 
-  private userIdle: Subject<boolean> = new Subject();
-  private userTimeout: number;
   public isIdle = false;
 
-  constructor(private router: Router) {  }
+  constructor(private router: Router,
+              private changeDetect: ChangeDetectorRef) {  }
 
   ngOnInit(): void {
   }
 
   ngAfterViewInit(): void {
-    this.setupCanvas();
-    this.setParticles();
+    window.setTimeout(() => {
+      this.setupCanvas();
+      this.setParticles();
+    }, 500);
   }
 
   public navigateAway(): void {
